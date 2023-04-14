@@ -259,11 +259,60 @@ header{
 }
 
 .faq-small-container{
-    background-color: var(--color-bg2);
+    background-color: var(--color-primary);
     margin: 10px;
     display: flex;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.icon-faq{
+    font-size: 1.2rem;
+    align-self: flex-start;
+    margin-right: 1rem;
+    align-items: center;
 }
 
 .faq-question p{
+    margin-top: 0.2rem;
     display: none;
+    font-size: 1rem;
+    
+}
+
+.faq-question h3{
+    font-size: 16px;
+}
+
+.icon-faq-minus{
+    display: none;
+}
+
+.icon-faq-minus.open{
+    display: block;
+}
+
+.icon-faq-plus.open{
+    display: none;
+}
+
+.faq-question.open p{
+    display: block;
+}
+
+
+/* Testemonial */
+
+.testemonial{
+    margin-top: 4rem;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar-pic{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border: 1rem solid var(--color-bg1);
+    border-radius: 100%;
 }
